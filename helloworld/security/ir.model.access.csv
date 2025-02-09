@@ -1,3 +1,9 @@
+<<<<<<< HEAD
 id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
 view_hello_world,view_hello_world,model_hello_world,group_hello_world_viewer,1,0,0,0
 edit_hello_world,edit_hello_world,model_hello_world,group_hello_world_editor,1,1,1,1
+=======
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+view_hello_world,view_hello_world,model_hello_world,group_hello_world_viewer,1,0,0,0
+edit_hello_world,edit_hello_world,model_hello_world,group_hello_world_editor,1,1,1,1
+>>>>>>> a9064aa5d1392ebad5de6625748eec7cd0146484
