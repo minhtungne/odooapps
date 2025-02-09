@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    
+    <record id="test_model_action" model="ir.actions.act_window">
+        <field name="name">Test action</field>
+        <field name="res_model">test_model</field>
+        <field name="view_mode">tree,form</field>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">
+                Create a new estate
+            </p>
+        </field>
+    </record>
+
+    <record id="test_model_view_tree" model="ir.ui.view">
+        <field name="name">Test View Tree</field>
+        <field name="model">test_model</field>
+        <field name="arch" type="xml">
+            <tree string="Tests">
+                <field name="name" string="Title"/>
+                <field name="postcode" optional="show"/>
+                <field name="bedrooms"/>
+                <field name="living_area" optional="show"/>
+                <field name="expected_price" optional="show"/>
+                <field name="selling_price" optional="hide"/>
+                <field name="date_availability" optional="hide"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="test_model_view_form" model="ir.ui.view">
+        <field name="name">Test View Form</field>
+        <field name="model">test_model</field>
+        <field name="arch" type="xml">
+            <form string="Tests">
+                <sheet>
+                    <group>
+                        <group>
+                            <field name="name" string="Title"/>
+                            <field name="postcode"/>
+                            <field name="bedrooms"/>
+                        </group>
+                        <group>
+                            <field name="selling_price"/>
+                            <field name="date_availability"/>
+                            <field name="selling_price"/>
+                            <field name="date_availability"/>
+                        </group>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+    
+</odoo>
